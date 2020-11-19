@@ -1,5 +1,5 @@
 SELECT a.studentid, a.name, b.total_marks
-FROM student_a, marks_b
+FROM student as a, mark as b
 WHERE a.studentid = b.studentid AND b.total_marks >
 (SELECT total_marks
 FROM marks
